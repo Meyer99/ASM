@@ -1,2 +1,2 @@
 # ASM
-Association Management System
+Associations Management System
