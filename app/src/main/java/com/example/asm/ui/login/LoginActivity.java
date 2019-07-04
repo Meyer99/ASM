@@ -19,8 +19,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.asm.R;
-import com.example.asm.ui.login.LoginViewModel;
-import com.example.asm.ui.login.LoginViewModelFactory;
 
 public class LoginActivity extends AppCompatActivity
 {
