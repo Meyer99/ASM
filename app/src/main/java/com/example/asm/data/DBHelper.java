@@ -10,6 +10,11 @@ import com.example.asm.data.model.User;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
+
+/**
+ * 用于初始登陆，角色间通用的方法，角色特有的放于Role类中
+ * 该接口也是获取User的接口
+ */
 public interface DBHelper {
 
     /**
@@ -17,37 +22,16 @@ public interface DBHelper {
      * 登陆失败 返回 null
      * 登陆成功 返回 一个User对象
      */
-    public User login(String id, String password);
+    public User login(Integer id, String password);
 
-    public User addUser(String id, String pass, String name);
-
-    public boolean deleteUser(String id);
-
-    public boolean changePass(String id, String pass);
-
-
-    public ArrayList<Association> getAssociationList();
-
-    public Association getAssociation(String name);
-
-    public boolean addAssociation(String name, String date, String description, ArrayList<User>
-            iniMember, String badgePath, String flagPath);
-
-    public boolean deleteAssociation(String id);
-
-    // 如果没有发现或者id有误返回null
-    public ArrayList<Application> getApplicationList(String associationId);
-
-    // 如果没有发现或者id有误返回null
-    public ArrayList<AssociationFile> getAssociationFile(String associationId);
-
-    public ArrayList<Material> getMaterial(String associationId);
-
-    public ArrayList<Application> getJoinApplication(String associationId);
-
-    // 没有则返回null
-    public ArrayList<Application> getApplicationNeedExam();
-
-    public ArrayList<Activity> getActivity(String id);
+//    public User addUser(String id, String pass, String name);
+//
+//    public ArrayList<Association> getAssociationList();
+//
+//    public Association getAssociation(String name);
+//
+//    public ArrayList<Material> getMaterial(String associationId);
+//
+//    public ArrayList<Activity> getActivities(String associationName);
 
 }

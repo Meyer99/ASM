@@ -6,7 +6,9 @@
     <version value = "1"></version>
 
     <list>
-
+        <mapping class="com.example.asm.data.model.User"/>
+        <mapping class="com.example.asm.data.model.Association"/>
+        <mapping class="com.example.asm.data.model.Role"/>
     </list>
 
 </litepal>
